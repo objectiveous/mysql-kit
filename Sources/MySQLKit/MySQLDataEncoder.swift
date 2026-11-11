@@ -168,6 +168,3 @@ public struct MySQLDataEncoder: Sendable {
         }
     }
 }
-
-/// This conformance suppresses a slew of spurious warnings in some build environments.
-extension MySQLNIO.MySQLProtocol.DataType: @unchecked Swift.Sendable {} // Fully qualifying the type names implies @retroactive
